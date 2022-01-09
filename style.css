@@ -1,0 +1,190 @@
+:root {
+  --main--color: #bfd225;
+}
+
+body {
+  font-family: "Open Sans", "sans-serif";
+}
+
+/* start landing page */
+.landing-page {
+  min-height: 100vh;
+  background-image: url(../images/hero-bg1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.landing-page .overlay {
+  background-color: rgb(0 0 0 / 40%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.header-area {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  padding: 10px;
+}
+.header-area .logo {
+  width: 300px;
+  padding: 15px;
+  font-weight: bold;
+}
+.header-area .links {
+  list-style: none;
+  text-align: right;
+  width: 100%;
+  margin-left: 10px;
+  padding-left: 0;
+  padding-right: 20px;
+  font-size: 15px;
+}
+.header-area .links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.header-area .links li a {
+  color: #fff;
+  text-decoration: none;
+}
+.header-area .links li a:hover,
+.header-area .links li a.active {
+  color: var(--main--color);
+  transition: 0.3s;
+}
+.introduction-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+.introduction-text h1 span {
+  color: var(--main--color);
+}
+/* end landing page */
+
+/* start container style */
+.container {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.features .container {
+  display: flex;
+  padding: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.container p {
+  margin: 5px 5px;
+}
+.container i {
+  font-size: 35px;
+}
+.container h3 {
+  color: #a72929;
+}
+/* end container style */
+
+/* about us section */
+.about-us {
+  text-align: center;
+}
+.about-us h2 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #a72929;
+}
+
+/* to centralize the icons. */
+.container .feat i {
+  margin-left: 60px;
+}
+
+/* start gallery section */
+.gallery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.gallery .container {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.gallery h2 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #a72929;
+  margin: 0 0 50px;
+  text-align: center;
+}
+.gallery .imagesbox {
+  text-align: center;
+}
+.gallery .imagesbox img {
+  width: 200px;
+  padding: 3px;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.gallery .imagesbox img:hover {
+  width: 230px;
+  position: relative;
+  transition: 0.3s;
+  max-width: 100%;
+}
+/* end gallery section */
+
+/*start Tourism section*/
+.tourism {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #eee;
+}
+.tourism h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main--color);
+  margin: 0 0 50px;
+  text-align: center;
+}
+.tourism .tourism-box {
+  display: flex;
+  background-color: #fff;
+  padding: 15px;
+}
+.tourism .tourism-box .tourism-name {
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+  margin-top: 4px;
+}
+.tourism .tourism-box .tourism-progress {
+  height: 30px;
+  width: 100%;
+  background-color: #ddd;
+  position: relative;
+  border-radius: 10px;
+}
+.tourism .tourism-box .tourism-progress span {
+  width: 50%;
+  height: 100%;
+  background: var(--main--color);
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+}
+/*end Tourism section*/
